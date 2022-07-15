@@ -1,0 +1,629 @@
+/** Coded by Ophelia. Comments by Ophelia. **/
+
+/* Google fonts import link */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Raleway:wght@200;400&family=Satisfy&display=swap');
+
+@font-face {
+    font-family: 'endor';
+    src: url(../Fonts/endor.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+body {
+    background-color: #e6e6fa;
+}
+
+/* main flex container that structures the whole page */
+.flex-container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+/* General styling layout template for all of the pages */
+header {
+    background: linear-gradient(90deg,rgb(0, 97, 2, 1) 30%, purple 70%, thistle);  
+    color: black;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+}
+
+/* Dragon logo top left of header*/
+#logo {
+    order: 1;
+}
+
+/* "Fantasy Land" text in middle of header*/
+#main-title {
+    order: 2;
+    font-family: 'endor', Impact, fantasy, cursive, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 14vh;
+    transform: scaleY(0.7);
+    margin: 0;
+    padding: 0;
+}
+
+/* Catchy subheader on right-hand side of header*/
+#main-sub-title {
+    order: 3;
+    font-family: 'Satisfy', cursive, sans-serif;
+    font-weight: bolder;
+    font-size: 6vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark purple navbar*/
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    font-family: 'Raleway', Arial, sans-serf;
+    font-weight: bolder;
+    justify-items: flex-end;
+    justify-content: flex-end; 
+    background-color: #301934;;
+    border-radius: 2px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+/* Links to all the web pages*/
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Color changes on link interaction*/
+nav ul li a:link {
+        color: #FFE5B3;;
+}
+nav ul li a:visited {
+    color: goldenrod;
+}
+nav ul li a:hover{
+    color: rgb(0, 97, 2, 1);
+}
+nav ul li a:active{
+    color: rgb(0, 207, 57, 1);
+}
+
+
+.main-footer {
+    background-color:rgb(0, 97, 2, 1);
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: Raleway, Arial, sans-serif;
+    color: #FFE5B3;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/*Styling specific to only index.html page*/
+
+/* Image slideshow just below the navbar on the Home page */
+#images {
+    padding: 10px;
+    margin-top: 60px;
+    border: 10px solid black;
+    background: linear-gradient(palegreen, thistle);
+    border-radius: 8px;
+    background-image: url("../Images/maerchenwald_allgemein_europa-park.jpg");
+    background-position: center;
+    background-size:cover;
+    margin-left: 8%;
+    margin-right: 8%;
+    animation-name: cross-fade;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    height: 480px;
+    position: relative;
+}
+
+/* Animation time determining when each image fades into another*/
+@keyframes cross-fade {
+    0%{background-image: url("../Images/maerchenwald_allgemein_europa-park.jpg");}
+    25% {background-image: url("../Images/cottagecore_scene.png");}
+    50% {background-image: url("../Images/efteling_tree.jpg");}
+    75%{background-image: url("../Images/green_rollercoaster.jpg");}
+    90%{background-image: url("../Images/efteling2.jpg");}
+    100%{background-image: url("../Images/maerchenwald_allgemein_europa-park.jpg");}
+}
+
+/* Catchy "Release your inner goblin!" text on the image slideshow */
+#images h2 {
+    font-family: Endor, Satisfy, cursive, sans-serif;
+    font-size: 55px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    color: white;
+    text-shadow: 4px 4px black;
+    transform: scaleY(0.9);
+    margin-bottom: 0;
+}
+
+/* Styling for main information-providing body*/
+#main-index-flex-div {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 8vh;
+    margin-bottom: 12vh;
+}
+/* Styling for the introduction/description and
+    for the map elements in the big left-hand column of the flexbox*/
+#main-index-left{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-self: left;
+    flex-basis: 70%;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+/* Styling for the first item, the introduction to the theme park, in the left column*/
+#main-index-left #main-index-text {
+    background-color: thistle;
+    color:#301934;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 70px;
+}
+/* Styling for the title of the introduction*/
+#main-index-left #main-index-text h3 {
+    font-family: Satisfy, cursive, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+/* Styling for the paragraph of the introduction */
+#main-index-left #main-index-text .description{
+    font-family: Raleway, Arial, sans-serif;
+    text-align: center;
+}
+/* Styling for the bullet-point list of attractions */
+#main-index-left #main-index-text ul {
+    font-family: Raleway, Arial, sans-serif;
+    text-align: left;
+}
+
+/* Styling for map section */
+#main-index-left #map-section{
+    background-color: lightpink;
+    color:#301934;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-self: left;
+    margin-top: 30px;
+    padding: 10px;
+}
+#main-index-left #map-section h3 {
+    font-family: Satisfy, cursive, sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+#main-index-left #map-section img {
+    align-self: center;
+    max-width: 700px;
+}
+
+
+/* Styling for right flexbox aside column (right sidebar)*/
+aside {
+    flex-basis: 20%;
+    padding: 20px;
+    background-color: palegreen;
+    margin-left: 20px;
+    border-radius: 4px;
+    justify-self: right;
+    align-self: flex-start;
+    color: rgb(90, 90, 90); 
+    height: fit-content;
+    min-height: 100%;
+    text-align: center;
+}
+aside:hover {
+    color: black;
+}
+aside #sidebar-title {
+    font-family: Satisfy, cursive, sans-serif;
+    font-size: 30px;
+    padding-top: 40px;
+}
+aside #aside-description {
+
+    font-family: Raleway, Arial, sans-serif;
+    padding-top: 40px;
+}
+aside #aside-list {
+    font-family: Raleway, Arial, sans-serif;
+    padding-top: 40px;
+}
+aside #aside-list li {
+    padding: 10px;
+}
+
+
+
+
+/* Styling for the specifics of the Rides page */ 
+/* Styling for rides that will have the Right-Hand-Side light green "aside" menu next to them */
+#list-of-rides {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Generic ride class*/
+.ride {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 40px;
+    justify-items: space-between;
+    padding: 30px;
+    border-radius: 10px;    
+}
+
+#fairy-wheel {
+    background-color: thistle;
+}
+
+#smack-a-gnome {
+    background-color: olivedrab;
+}
+
+.ride-img-div {
+    flex-basis: 40%;
+    align-self: center;
+}
+
+.ride-img-div figure figcaption
+{
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 14px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.ride-img-div figure img
+{
+    width: 30vw;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+.ride-text-div
+{
+    flex-basis: 60%;
+    align-self: flex-start;
+}
+
+.ride-text-div h3{
+    font-family: Satisfy, cursive, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-size: 40px;;
+}
+
+.ride-text-div p {
+    font-family: Raleway, Arial, sans-serif;
+}
+
+.ride-text-div ul {
+    font-family: Raleway, Arial, sans-serif;
+}
+
+
+
+/* Styling for elements that come full-size at the bottom after the aside ends*/
+#under-the-aside 
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+}
+
+#loopy-leprechaun {
+    background-color: goldenrod;
+    margin-top: -5px;
+    width: fit-content;
+    max-width: 90%;
+}
+
+/* Styling for map at bottom of main rides page*/
+#rides-map-box
+{
+    width: fit-content;
+    background-color: pink;
+    padding: 20px;
+    min-width: 90%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+#rides-map-box h3
+{
+    text-align: center;
+    font-family: Satisfy, cursive, sans-serif;
+    font-size: 40px;
+}
+
+
+/* Styling for practical info/details page */
+/* Flexbox for main body of practical info page layout*/
+#main-info-box 
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+/* Prices div container */
+#prices
+{
+    width: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#prices h2 
+{
+    font-family: Satisfy, cursive, sans-serif;
+    color:#301934;
+    font-size: 50px;
+    padding: 20px;
+}
+
+/* Styling for container row of price groups*/
+#price-row
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* Styling for each type of price or ticket*/
+.price-box
+{
+    margin: 10px;
+    border-radius: 10px;
+}
+.price-box h3
+{
+    font-family: Satisfy, cursive, sans-serif;
+    font-size: 36px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.price-box h4
+{
+    font-size: 30px;
+}
+.price-box h4, p
+{
+    font-family: Raleway, Arial, sans-serif;
+    text-align: center;
+}
+.price-box p
+{
+    padding: 20px;
+    margin: 20px;
+}
+
+#day-pass
+{
+    background-color: thistle;
+}
+#family-pass
+{
+    background-color:#301934;
+    color: thistle;
+}
+#family-pass h4
+{   
+    padding: 8px;
+    color: red;
+    font-weight: bolder!important;
+}
+#kids-pass
+{
+    background-color: #b19cd9;
+}
+
+
+/* Styling for restaurants and food container*/
+#restaurants
+{
+    padding: 40px;
+    margin: 20px;
+}
+#restaurants h2
+{
+    font-family: Satisfy, cursive, sans-serif;
+    text-align: center;
+    color:#301934;
+    font-size: 42px;
+}
+#restaurants h3, h4
+{
+    font-family: Raleway, Arial, sans-serif;
+    text-align: center;
+    color:#301934;
+}
+
+/* Styling for custom Alice-in-Wonderland menu*/
+/* Using background image with relative-position to allow for opacity of image to be low*/
+/* Content goes on an exactly the same sized absolute-positioned div on top of the imaeg*/
+#alice-menu-wrap
+{
+    overflow: hidden;
+    position: relative;
+    border: 6px inset rebeccapurple;
+
+}
+#alice-background
+{
+    opacity: 0.36;
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+#menu-content
+{
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    color: black;
+}
+/* Styling for text on the custom menu */
+#menu-content h4
+{
+    font-family: Endor, fantasy, Arial, sans-serif;
+    font-size: 28px;
+}
+#menu-content ul
+{
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: bolder;
+}
+#menu-content ul li
+{
+    padding: 10px;
+}
+
+
+/* Styling for FAQ Question-and-Answer section*/
+#faq-section
+{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: thistle;
+    border-radius: 6px;
+}
+#faq-section h2
+{
+    color:#301934;
+    font-size: 42px;
+    font-family: Satisfy, Arial, sans-serif;
+    justify-self: center;
+    align-self: center;
+    font-weight: bolder;
+}
+#list-of-questions
+{
+    list-style: none;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+/* Styling for each individual question-answer list element, which is a sub-ul*/
+#list-of-questions ul
+{
+    list-style:none;
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-right: 40px;
+    margin-bottom: 18px;
+    padding: 10px;
+    border-radius: 10px;    
+
+}
+.question
+{
+    font-family: Raleway, Arial, sans-serif;
+    transform: scaleY(0.9);
+    font-size: 22px;
+}
+.answer
+{
+    padding: 10px;
+    margin: 10px;
+}
+/* Give each question a different colour but still similar ones to show that they belong to same section */
+#q1
+{
+    background-color:#7bb661;
+}
+#q2
+{
+    background-color: #77dd77;
+}
+#q3
+{
+    background-color: #90ee90;  
+}
+#q4
+{
+    background-color: #a8e4a0;
+}
+#q5
+{
+    background-color: #98fb98;
+}
+#q6
+{
+    background-color: #d0f0c0;
+}
+
+
+/* Styling for map-location in real world section */
+.location-section
+{
+    display:flex;
+    border: 2px solid-black;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#location-section h2
+{
+    font-family: Satisfy, Arial, sans-serif;
+    font-size: 42px;
+    color:#301934;
+    text-align: center;
+}
+#location-img-div
+{
+    background-color: pink;
+    padding: 20px;
+}
+#location-img-div img
+{
+    width: 70vw;  
+}
+
+

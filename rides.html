@@ -1,0 +1,153 @@
+<!-- Coded by Ophelia. Descriptions by Ricco. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <title>Fantasy Land Theme Park - Rides</title>  <!-- Title of web page-->
+  <meta charset="utf-8">
+  <meta name="description" content="A fantasy experience like no other!">       <!-- Description of web page-->
+  <meta name="author" content="t3g5-sjm">   <!-- Group tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="refresh" content="600"><!--Refresh content every 600 seconds-->
+  <link rel="stylesheet" type="text/css" href="Styles/styles.css">  <!--Link to CSS style sheet-->
+</head>
+
+
+<body>
+
+  <!-- Main container for whole page -->
+  <div class="flex-container">
+
+    <header>  <!-- Header: Logo and Title-->
+        <a id="logo" href="index.html"> <!-- Clicking the Logo takes you to the Home Page-->
+          <img src="Images/FLlogo.png" alt="Fantasy Land logo of dragon" width="200" height="auto"> <!-- Display 'Fantasy Land logo of dragon' for those with screen readers.-->
+        </a>
+        <h1 id="main-title"><em style="color:goldenrod">*</em>Fantasy Land<em style="color:goldenrod">*</em></h1>
+        <h2 id="main-sub-title">A Fairy Tale Come True!</h2>
+    </header>
+
+    <nav class="main-nav"> <!-- Navbar at top of page-->
+      <ul class="nav-list">
+        <li class="list-item"><a href="index.html">Home</a></li> <!-- Takes you to the Home Page-->
+        <li class="list-item"><a href="rides.html">Rides</a></li> <!-- Takes you the Rides Page-->
+        <li class="list-item"><a href="info.html">Practical Information</a></li> <!-- Takes you to the Practical Information Page-->
+      </ul>
+    </nav>
+
+
+    <!--Main body of page-->
+    <main id="main-index-flex-div">  
+      <!-- Main body of information and map -->
+      <div id="main-index-left">
+        <section id="list-of-rides">
+            <div class="ride" id="fairy-wheel">   <!-- Fairy Wheel-->
+                <div class="ride-img-div">
+                    <figure>
+                        <img src="Images/ferrisWheel.gif" alt="Photograph of a fairy-themed ferris wheel" width="300" height="200"> <!-- Alt caption for screen readers-->
+                        <figcaption><b>Fairy Wheel</b> - Magical views of the lush park and grounds!</figcaption>
+                      </figure>
+                </div> 
+                <div class="ride-text-div">
+                    <h3>Fairy Wheel</h3>
+                    <p>
+                      Our Fairy Wheel boasts a magnificent height of 100 metres (328 feet) allowing you take in breath-taking views of our park and the neighbouring city! Our light show in a rainbow of colours happens every night from 7pm!
+                    </p>
+                    <ul>
+                        <li>No height requirement</li>
+                        <li>High heights - not recommended for those who suffer from Vertigo or Acrophobia</li>
+                        <li>2 wheelchair accessible carts</li>
+                        <li>Children under 7 must be accompanied by an adult</li>
+                      </ul>
+                </div>  
+            </div>
+
+            <div class="ride" id="smack-a-gnome"> <!-- Smack A Gnome-->
+                <div class="ride-img-div">
+                    <figure>
+                        <img src="Images/gnome.jpg" alt="Photograph of gnome cottage"> <!-- Alt caption for screen readers-->
+                        <figcaption><b>Smack-a-Gnome</b> - Give those thieving rascals a good whack!</figcaption>
+                      </figure>
+                </div> 
+                <div class="ride-text-div">
+                    <h3>Smack-a-Gnome</h3>
+                    <p>
+                      Based on the arcade game 'smack-a-mole', Smack-a-Gnome takes it to a whole 'nother level! From arcade games to 3d rides, you won't forget this experience any time soon!
+                    </p>
+                    <ul>
+                        <li>No height requirement!</li>
+                        <li>Fun for all ages!</li>
+                        <li>Children under 7 must be accompanied by an adult</li>
+                        <li>Wheelchair accessible</li>
+                        <li>Possible jump scares and violence</li>
+                      </ul>
+                </div>  
+            </div>
+        </section>
+      </div>
+
+      <!--Sidebar including practical information-->
+      <aside id="rides-aside">
+        <h3 id="sidebar-title">Things to keep note of !</h3>
+        <p id="aside-description">
+          At Fantasy Land, safety is our number one priority (after having fun of course). To ensure a pleasant time for all, please abide by our park rules, ride requirements and friendly staff!
+        </p>
+        <ul id="aside-list">
+          <li>No minimum height or age requirement for entry and some rides. See specific rides for more details.</li>
+          <li>Please make note of your nearest medical centre on the map in case of emergency.</li>
+          <li>Take note of our multiple changing facilities, bathrooms and information centers located on the map. </li>
+          <li>The park is not responsible for any theft/loss of personal property. </li>
+          <li>Looking for something? Just ask! Our friendly staff awaits your presence.</li>
+          <li style="font-weight: bold">Have fun !!!</li> <!-- 3 Exclamation points and Bold to emphasize fun-->
+        </ul>
+      </aside>
+
+    </main>
+
+    <div id="under-the-aside">
+      <div class="ride" id="loopy-leprechaun">
+        <div class="ride-img-div">
+            <figure>
+                <img src="Images/leprechaun.jfif" alt="Photograph of leprechaun statue in a theme park">
+                <figcaption><b>Loopy Leprechaun</b> - Seek some thrills with our 8-looped leprechaun rollercoaster!</figcaption>
+              </figure>
+        </div> 
+        <div class="ride-text-div">
+            <h3>Loopy Leprechaun</h3>
+            <p>
+              Consisting of 8 loops, 2 helixes and 1 gravity-defying launch, this rollercoaster is not for the faint of heart! Deemed the craziest ride in all of America, true bragging rights are given to all those who can conquer! Able to rides this 10 times in a row? A special prize of gold awaits you... Only if you dare...
+            </p>
+            <ul>
+                <li>1.4m+</li>
+                <li>Age 12+</li>
+                <li>Can cause nausea and dizziness</li>
+                <li>Not accessible for pregnant people or those who suffer from heart conditions. </li>
+              </ul>
+        </div>
+      </div>
+
+      <div id="rides-map-box">
+        <h3>Map of Theme Park</h3>
+        <img src="./Images/map.png" alt="map of theme park">
+      </div>
+    </div>
+
+    <footer class="main-footer"> <!-- Footer divided into three columns -->
+      <div id="price">
+        <h4 style="color:blanchedalmond"> Day Passes: Only $20!</h4>
+      </div>
+      <div id="contact">   
+        <b>Contact Us!</b>
+        <address>
+          17 Fairways, Boulevard Park, California
+        </address>
+        <p> &#128241 031 415 9265</p> <!-- &#128241 = mobile emoji-->
+      </div>
+      <div id="discount">
+        <h4 style="color:blanchedalmond"> 10% off on Wednesday! </h4>
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>

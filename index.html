@@ -1,0 +1,113 @@
+<!-- Coded by Ophelia. Descriptions by Ricco. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <title>Fantasy Land Theme Park - Home</title>  <!-- Title of web page-->
+  <meta charset="utf-8">
+  <meta name="description" content="A fantasy experience like no other!">       <!-- Description of web page-->
+  <meta name="author" content="t3g5-sjm">   <!-- Group tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="refresh" content="600"><!--Refresh content every 600 seconds-->
+  <link rel="stylesheet" type="text/css" href="Styles/styles.css">  <!--Link to CSS style sheet-->
+</head>
+
+
+<body>
+
+  <!-- Main container for whole page -->
+  <div class="flex-container">
+
+    <header>  <!-- Header: Logo and Title-->
+        <a id="logo" href="index.html">       <!-- Clicking the Logo takes you to the Home Page-->
+          <img src="Images/FLlogo.png" alt="Fantasy Land logo of dragon" width="200" height="auto"> <!-- Display 'Fantasy Land logo of dragon' for those with screen readers.-->
+        </a>
+        <h1 id="main-title"><em style="color:goldenrod">*</em>Fantasy Land<em style="color:goldenrod">*</em></h1>
+        <h2 id="main-sub-title">A Fairy Tale Come True!</h2>
+    </header>
+
+    <nav class="main-nav"> <!-- Navbar at top of page-->
+      <ul class="nav-list">
+        <li class="list-item"><a href="index.html">Home</a></li> <!-- Takes you to the Home Page-->
+        <li class="list-item"><a href="rides.html">Rides</a></li> <!-- Takes you the Rides Page-->
+        <li class="list-item"><a href="info.html">Practical Information</a></li> <!-- Takes you to the Practical Information Page-->
+      </ul>
+    </nav>
+
+    <!--Images of theme park -->
+    <!--Accessibility label for theme park background image slideshow-->
+    <div id="images" aria-label=
+    "Slideshow of images of theme park grounds,
+      bridge surrounded by flowers, 
+      big green rollercoaster,
+      and castle-themed center of the park"
+    >
+      <h2>Release your inner goblin!</h2>
+    </div>
+
+    <!--Main body of page-->
+    <main id="main-index-flex-div">  
+      
+      <!-- Main body of information and map -->
+      <div id="main-index-left">
+        <div id="main-index-text"> <!-- main content-->
+          <h3>Enjoy Our Fun and Exciting Rides!</h3>
+          <p class="description">
+            Welcome to Fantasy Land! An experience like no other! From fairies to fire, dragons to dungeons, wizards to wine, we have it all! Enjoy our plethora of rides, games, attractions and more! Don't miss out on our award-winning Alice In Wonderland cafe. In Fantasy Land, the fun never ends! Check out:
+          </p>
+          <ul>
+            <li>Fairy Wheel</li>    <!-- Listed Items-->
+            <li>Smack-a-Gnome!</li>
+            <li>Loopy Leprechaun</li>
+            <li>And Much More..........</li> <!-- Lots of dots to emphasize the sheer amount of rides-->
+            <br>  <!-- Line break-->
+            <table>   <!-- table for opening/closing times-->
+              <tr><th>Monday &amp; Tuesday</th><td>Closed</td></tr> <!-- &amp; = ampersand -->
+              <tr><th>Wednesday - Friday</th><td>11AM - 10PM</td></tr>
+              <tr><th>Saturday &amp; Sunday</th><td>8AM - 11PM</td></tr>
+          </table>
+          </ul>
+        </div>
+        <div id="map-section">
+          <h3>Map of Theme Park</h3>
+            <img id="map-img-index" src="Images/map.png" alt="Theme park map" width="75%" height="auto">
+        </div>
+      </div>
+
+      <!--Sidebar including practical information-->
+      <aside>
+        <h3 id="sidebar-title">Things to keep note of !</h3>
+        <p id="aside-description">
+          At Fantasy Land, safety is our number one priority (after having fun of course). To ensure a pleasant time for all, please abide by our park rules, ride requirements and friendly staff!
+        </p>
+        <ul id="aside-list">
+          <li>No minimum height or age requirement for entry and some rides. See specific rides for more details.</li>
+          <li>Please make note of your nearest medical centre on the map in case of emergency.</li>
+          <li>Take note of our multiple changing facilities, bathrooms and information centers located on the map. </li>
+          <li>The park is not responsible for any theft/loss of personal property. </li>
+          <li>Looking for something? Just ask! Our friendly staff awaits your presence.</li>
+          <li style="font-weight: bold">Have fun !!!</li> <!-- 3 Exclamation points and Bold to emphasize fun-->
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="main-footer"> <!-- Footer divided into three columns -->
+      <div id="price">
+        <h4 style="color:blanchedalmond"> Day Passes: Only $20!</h4>
+      </div>
+      <div id="contact">   
+        <b>Contact Us!</b>
+        <address>
+          17 Fairways, Boulevard Park, California
+        </address>
+        <p> &#128241 031 415 9265</p> <!-- &#128241 = mobile emoji-->
+      </div>
+      <div id="discount">
+        <h4 style="color:blanchedalmond"> 10% off on Wednesday! </h4>
+      </div>
+    </footer>
+  </div>
+  </body>
+</html>
