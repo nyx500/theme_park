@@ -1,2 +1,1 @@
-# t3g5-sjm
-# Team 34 (Tutor Group 5)
+Theme park HTML/CSS front-end for group university project.
